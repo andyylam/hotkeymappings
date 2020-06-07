@@ -2,122 +2,72 @@
 
 SetCapsLockState, AlwaysOff
 
-CapsLock & i::
-if GetKeyState("Shift", "D")
-    if GetKeyState("Alt", "D")
-        Send +^{Up}
-    else if GetKeyState("Ctrl", "D")
-        Send +!{Up}
-    else
-        Send +{Up}
-else if GetKeyState("Ctrl", "D")
-    if (GetKeyState("Alt", "D"))
-        Send !^{Up}
-    else
-        Send !{Up}
-else if GetKeyState("Alt", "D")
-    Send ^{Up}
-else
+CapsLock & k::
     Send {Up}
 return
 
-CapsLock & k::
-if GetKeyState("Shift", "D")
-    if GetKeyState("Alt", "D")
-        Send +^{Down}
-    else if GetKeyState("Ctrl", "D")
-        Send +!{Down}
-    else
-        Send +{Down}
-else if GetKeyState("Ctrl", "D")
-    if (GetKeyState("Alt", "D"))
-        Send !^{Down}
-    else
-        Send !{Down}
-else if GetKeyState("Alt", "D")
-    Send ^{Down}
-else
+CapsLock & j::
     Send {Down}
 return
 
-CapsLock & j::
-if GetKeyState("Shift", "D")
-    if GetKeyState("Alt", "D")
-        Send +^{Left}
-    else if GetKeyState("Ctrl", "D")
-        Send +!{Left}
-    else
-        Send +{Left}
-else if GetKeyState("Ctrl", "D")
-    if (GetKeyState("Alt", "D"))
-        Send !^{Left}
-    else
-        Send !{Left}
-else if GetKeyState("Alt", "D")
-    Send ^{Left}
-else
+CapsLock & h::
     Send {Left}
 return
 
 CapsLock & l::
-if GetKeyState("Shift", "D")
-    if GetKeyState("Alt", "D")
-        Send +^{Right}
-    else if GetKeyState("Ctrl", "D")
-        Send +!{Right}
-    else
-        Send +{Right}
-else if GetKeyState("Ctrl", "D")
-    if (GetKeyState("Alt", "D"))
-        Send !^{Right}
-    else
-        Send !{Right}
-else if GetKeyState("Alt", "D")
-    Send ^{Right}
-else
     Send {Right}
 return
 
-CapsLock & u::
-if GetKeyState("Shift", "D")
-    if GetKeyState("Alt", "D")
-        Send +^{Home}
-    else if GetKeyState("Ctrl", "D")
-        Send +!{Home}
-    else
-        Send +{Home}
-else if GetKeyState("Ctrl", "D")
-    if (GetKeyState("Alt", "D"))
-        Send !^{Home}
-    else
-        Send !{Home}
-else if GetKeyState("Alt", "D")
-    Send ^{Home}
-else
-    Send {Home}
+#h::
+    Send #{Left} 
+return 
+
+#l::
+    Send #{Right}
+    return
+
+#k::
+    Send #{Up}
 return
 
-CapsLock & o::
-if GetKeyState("Shift", "D")
-    if GetKeyState("Alt", "D")
-        Send +^{End}
-    else if GetKeyState("Ctrl", "D")
-        Send +!{End}
-    else
-        Send +{End}
-else if GetKeyState("Ctrl", "D")
-    if (GetKeyState("Alt", "D"))
-        Send !^{End}
-    else
-        Send !{End}
-else if GetKeyState("Alt", "D")
-    Send ^{End}
-else
-    Send {End}
+#j::
+    Send #{Down}
 return
 
-CapsLock & y:: send, {PgUp}
-CapsLock & h:: send, {PgDn}
+
+^#h::
+    Send ^#{Left} 
+return 
+
+^#l::
+    Send ^#{Right}
+return
+
+^#k::
+    Send ^#{Up}
+return
+
+^#j::
+    Send ^#{Down}
+return
+
+
+
+CapsLock & w::
+    Send {Up}
+return
+
+CapsLock & s::
+    Send {Down}
+return
+
+CapsLock & a::
+    Send {Left}
+return
+
+CapsLock & d::
+    Send {Right}
+return
 
 !i:: send, {PgUp}
 !k:: send, {PgDn}
