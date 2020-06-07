@@ -8,20 +8,44 @@ return
 
 
 CapsLock & k::
-    Send {Up}
-return
-
-CapsLock & j::
-    Send {Down}
-return
+    if GetKeyState("Ctrl", "D")
+        if GetKeyState("Shift", "D")
+            Send +^{Up}
+        else 
+            Send ^{Up}
+    else 
+        Send {Up}
+    return
 
 CapsLock & h::
-    Send {Left}
-return
+    if GetKeyState("Ctrl", "D")
+        if GetKeyState("Shift", "D")
+            Send +^{Left}
+        else 
+            Send ^{Left}
+    else 
+        Send {Left}
+    return
+
+CapsLock & j::
+    if GetKeyState("Ctrl", "D")
+        if GetKeyState("Shift", "D")
+            Send +^{Down}
+        else 
+            Send ^{Down}
+    else 
+        Send {Down}
+    return
 
 CapsLock & l::
-    Send {Right}
-return
+    if GetKeyState("Ctrl", "D")
+        if GetKeyState("Shift", "D")
+            Send +^{Right}
+        else 
+            Send ^{Right}
+    else 
+        Send {Right}
+    return
 
 #h::
     Send #{Left} 
@@ -71,7 +95,6 @@ return
 ^#j::
     Send ^#{Down}
 return
-
 
 
 CapsLock & w::
