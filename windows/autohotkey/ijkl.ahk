@@ -34,6 +34,22 @@ return
     Send #{Down}
 return
 
+!h::
+    Send !{Left} 
+return 
+
+!l::
+    Send !{Right}
+    return
+
+!k::
+    Send !{Up}
+return
+
+!j::
+    Send !{Down}
+return
+
 
 ^#h::
     Send ^#{Left} 
@@ -67,9 +83,4 @@ return
 
 CapsLock & d::
     Send {Right}
-return
-
-!i:: send, {PgUp}
-!k:: send, {PgDn}
-
 return
