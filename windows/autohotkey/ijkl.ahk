@@ -2,6 +2,11 @@
 
 SetCapsLockState, AlwaysOff
 
+`::
+    Send {Esc}
+return
+
+
 CapsLock & k::
     Send {Up}
 return
