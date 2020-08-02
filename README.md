@@ -5,42 +5,10 @@ Make use of caps lock, remap arrow keys to { i, j, k, l } and extra stuff.
 For [Linux](#linux) and for [Windows](#windows)
 
 # Linux
-## AutoKey
-[AutoKey](https://github.com/autokey/autokey) needs to be installed for Linux. This can be downloaded within Ubuntu package manager. The scripts can be found [here](linux/autokey).
 
-At first caps lock has to be changed to function as the **hyper** key. This can be done with **Gnome Tweak Tool**.
-
-| Shortcut                         | Output                           |
-| -------------------------------- | -------------------------------- |
-| CAPSLOCK + { i, j, k, l }        | { Up, Left, Down, Right }        |
-| CAPSLOCK + CTRL + { i, j, k, l } | ALT + { Up, Left, Down, Right }  |
-| CAPSLOCK + ALT + { i, j, k, l }  | CTRL + { Up, Left, Down, Right } |
-| CAPSLOCK + { u, o }              | { Home, End }                    |
-| ALT + { i, k }                   | { PageUp, PageDown }             |
-
-Move the scripts to the directory `~/.config/autokey/data/`.
-
-## Terminator
-Terminator is used as a terminal and scripts can be found [here](linux/terminator).
-
-| Shortcut                                | Output                                                         |
-| --------------------------------------- | -------------------------------------------------------------- |
-| CAPSLOCK + CTRL + Alt { k, l }          | Create new tab to the { bottom, right }                        |
-| CAPSLOCK + CTRL { i, j, k, l }          | Focus the tab to the { top, left, bottom, right }              |
-| CAPSLOCK + ALT + SHIFT + { i, j, k, l } | Increase/Decrease tab size to the { top, left, bottom, right } |
-| CTRL + Shift + w                        | Close  tab                                                     |
-| CTRL + Shift + c                        | Copy text                                                      |
-| CTRL + Shift + v                        | Paste text                                                     |
-| ALT + { i, k }                          | { PageUp, PageDown }                                           |
-
-Move the script to the directory `~/.config/terminator/`.
-
-## Tilda
-Tilda is used as a dropdown terminal and the scripts can be found [here](linux/tilda).
-
-This adds the terminal to the op of the screen by pressing `CapsLock + T`.
-
-Move the script to the directory `~/.config/tilda/`.
+Uses `xmodmap` to modify keys. Run `xmodmap ~/.xmodmap` to activate. Put this bash command in `/etc/profile` to run on startup.
+Run `xcape -e 'Mode_switch=Escape'` to change Caps-Lock to Escape.
+Credits to https://unix.stackexchange.com/questions/414926/bind-capshjkl-to-arrow-keys-caps-to-esc.
 
 # Windows
 
