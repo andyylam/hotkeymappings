@@ -1,6 +1,6 @@
 My preferred key bindings for both Linux and Windows.
 
-Make use of caps lock, remap arrow keys to { i, j, k, l } and extra stuff.
+Make use of caps lock, remap arrow keys to { h, j, k, l } and extra stuff.
 
 For [Linux](#linux) and for [Windows](#windows)
 
@@ -32,19 +32,6 @@ Credits to https://unix.stackexchange.com/questions/414926/bind-capshjkl-to-arro
  3. Right click and choose **Paste Shortcut**. The shortcut to the script should now be in the Startup folder.
 
  If you need to run it as administrator either make sure the scripts is set up to administrator or start Command Prompt as administrator and run the scripts within.
-
- ## CMDer
-
-| Shortcut                                | Output                                                         |
-| --------------------------------------- | -------------------------------------------------------------- |
-| CAPSLOCK + CTRL + Alt { k, l }          | Create new tab to the { bottom, right }                        |
-| CAPSLOCK + CTRL { i, j, k, l }          | Focus the tab to the { top, left, bottom, right }              |
-| CTRL + Shift + w                        | Close  tab                                                     |
-| CTRL + Shift + c                        | Copy text                                                      |
-| CTRL + Shift + v                        | Paste text                                                     |
-| ALT + { i, k }                          | { PageUp, PageDown }                                           |
-
-Download font [FiraCode](https://github.com/tonsky/FiraCode) and [FlottFlott](https://www.dafont.com/flottflott.font)
 
 # macOS
 
