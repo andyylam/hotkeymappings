@@ -7,7 +7,9 @@ For [Linux](#linux) and for [Windows](#windows)
 # Linux
 
 Uses `xmodmap` to modify keys. Run `xmodmap ~/.xmodmap` to activate. Put this bash command in `/etc/profile` to run on startup.
+
 Run `xcape -e 'Mode_switch=Escape'` to change Caps-Lock to Escape.
+
 Credits to https://unix.stackexchange.com/questions/414926/bind-capshjkl-to-arrow-keys-caps-to-esc.
 
 # Windows
