@@ -7,7 +7,6 @@ For [Linux](#linux) and for [Windows](#windows)
 # Linux
 
 Uses `xmodmap` to modify keys. Run `xmodmap ~/.xmodmap` to activate. Put this bash command in `/etc/profile` to run on startup.
-
 Run `xcape -e 'Mode_switch=Escape'` to change Caps-Lock to Escape.
 
 Credits to https://unix.stackexchange.com/questions/414926/bind-capshjkl-to-arrow-keys-caps-to-esc.
@@ -40,23 +39,5 @@ Credits to https://unix.stackexchange.com/questions/414926/bind-capshjkl-to-arro
 
 | Shortcut                                                  | Output                                                    |
 | --------------------------------------------------------- | --------------------------------------------------------- |
-| CAPSLOCK + { i, j, k, l }                                 | { Up, Left, Down, Right }                                 |
-| CAPSLOCK + ⌘ COMMAND + { i, j, k, l, Backspace, Delete }  | ⌥ OPTION + { Up, Left, Down, Right, Backspace, Delete }   |
-| CAPSLOCK + ⌥ OPTION  + { i, j, k, l, Backspace, Delete }  | ⌘ COMMAND + { Up, Left, Down, Right, Backspace, Delete }  |
-| CAPSLOCK + { u, o }                                       | { Home, End } (*)                                         |
-| SHIFT + Backspace                                         | Delete                                                    |
-
-* Home and End aren't very useful on macOS. Similar functionality can be achieved with OPTION + Up (start of line), and OPTION + Down (end of line).
-Note that those would be COMMAND + Up and COMMAND + Down with the provided bindings.
-
-### Adding to Karabiner
-> :warning: **If you already use Karabiner**: follow the advanced steps to avoid loss of current settings.
-
-Copy [karabiner.json](macOS/Karabiner/karabiner.json) to your Karabiner config directory.
-This will result in Karabiner reading two profiles; 'Default macOS' and 'CAPSLOCK + IJKL'.
-Select 'CAPSLOCK + IJKL' and you are all set!
-
-#### Advanced: copying only the modifications
-If you already have your own profile and you only want to add the complex modifications, follow these steps.
-
-In [karabiner.json](macOS/Karabiner/karabiner.json) locate the profile 'CAPSLOCK + IJKL' and copy all the desired modifications from the 'rules' section (lines 153 to 844).
+| CAPSLOCK + { h, j, k, l }                                 | { Left, Down, Up, Right }                                 |
+| CAPSLOCK | Escape when pressed alone, L-Ctrl when held down |
